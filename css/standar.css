@@ -1,0 +1,150 @@
+/*padding*/
+/*right*/
+.p-r-2{
+	padding-right: 20px;
+}
+.p-r-3{
+	padding-right: 30px;
+}
+.p-r-3{
+	padding-right: 40px;
+}
+/*left*/
+.p-l-2{
+	padding-left: 20px;
+}
+.p-l-3{
+	padding-left: 30px;
+}
+.p-l-3{
+	padding-left: 40px;
+}
+/*bottom*/
+.p-b-2{
+	padding-bottom: 20px;
+}
+.p-b-3{
+	padding-bottom: 30px;
+}
+.p-b-3{
+	padding-bottom: 40px;
+}
+/*margin*/
+.m-y-2{
+	margin: 20px 0;
+}
+.m-y-3{
+	margin: 50px 0;
+}
+.m-y-4{
+	margin: 60px 0;
+}
+.m-y-5{
+	margin: 60px 0;
+}
+.m-x-2{
+	margin: 0 20px;
+}
+.m-x-3{
+	margin: 50px;
+}
+.m-x-4{
+	margin: 0 60px;
+}
+.m-x-5{
+	margin: 0 60px;
+}
+.social li { 
+	font-size: 20px;
+}
+/*Text*/
+h1,h2,h3,h4,h5,h6,h1 span, h2 span, h3 span,span{
+	color: var(--color-tittle);
+}
+.bold{
+	font-weight: bold;
+}
+p,a,i{
+	color: var(--color-txt);
+}
+i:hover{
+	color: var(--color-txt-hover);
+}
+.tittle{
+	background: var(--color-second);
+	color: var(--color-tittle);
+	font-size: 28px;
+	position: relative;
+
+	padding: 15px 0;
+}
+.tittle:before{
+	content: '';
+	position: absolute;
+	background-image: url(../img/details/bg-angle-sml.jpg);
+	top: 0;
+	bottom: 0;
+	width: 95px;
+}
+.tittle h2{
+	margin-left: 95px;
+}
+.txt-d-none{
+	text-decoration: none;
+}
+.txt-d-none:hover{
+	text-decoration: none;
+}
+.txt-center{
+	text-align: center;
+}
+.txt-upper{
+	text-transform: uppercase;
+}
+.underline{
+	text-decoration: underline;
+}
+
+/*Flex*/
+
+.flex{
+	display: flex;
+}
+.flex-row{
+	display: flex;
+	flex-direction: row;
+}
+
+.flex-end{
+	display: flex;
+	justify-content: flex-end;
+}
+.space-btw{
+	justify-content: space-between;
+}
+
+.flex-center{
+	display: flex;
+	justify-content: center;
+	align-items: center;	
+}
+.center{
+	justify-content: center;
+}
+.l-s-none{
+	list-style: none;
+}
+.col-center-block {
+	float: none;
+	display: block;
+	margin: 0 auto;
+}
+
+
+.absolute-center{
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	-webkit-transform: translate(-50%, -50%) 
+}

@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<meta name="description" content="dj illenium,Melodic music">
+	<meta name="keyworks" content="music, js, shows">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Illenium</title>
+	<!-- icon -->
+	<link rel="icon" href ="./img/icon.png">
+	<!-- styles -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/imports.css">
+	
+
+	<style type="text/css">
+		@import url('https://fonts.googleapis.com/css?family=Khand&display=swap');
+		.font-khand{
+			font-family: 'Khand', sans-serif;
+		}
+		@media(max-width: 750px){
+			.merch .target .description{
+				left: 40%;
+			}
+			.merch .target .description span{
+				font-size: 15px;
+			}
+			.merch .target .description button{
+				padding-top: 0;
+				padding-bottom:  0;
+			}
+			
+
+			.flex-col-ms{
+				display: flex;
+				flex-flow: row wrap;
+			}
+			.flex-start-ms{
+				display: flex;
+				justify-content: flex-start;
+			}
+			.flex-row-ms{
+				-webkit-flex-flow: column wrap;
+				flex-flow: column wrap;
+				/*width: 100%;*/
+			}
+			
+			.flex-end-ms{
+				display: flex;
+				justify-content: flex-end;
+			}	
+			#navigation nav, #navigation ul,.list-item-x li{
+				width: 100%
+			}
+			#navigation .list-item-x li a{
+				border-right: 0;
+				border-bottom: 1px solid var(--color-second);
+			}
+			.inactive{
+				display: none;
+			}
+			.menu-btn{
+				display: inline;
+			}
+		}
+	</style>
+	<!-- icons -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" >
+</head>
+<body>
+	<header id="header" class="font-khand">
+		<div class="bar-nav flex-row flex-col-ms">
+			<a href="#" title="">
+				<div class="illenium-logo">
+					<div class="logo">
+						<img src="img/logo.png" alt="logo"/>
+					</div>
+				</div>
+			</a>
+
+			<span class="button menu-btn" onclick="toggle('nav-il','inactive');"><i class="fas fa-bars"></i></span>
+			<div id="nav-il" class="col-md-8 ml-auto col-12 nav-il inactive">
+				<div class="flex-row-ms flex-end">
+					<div id="navigation">
+						<nav>
+							<ul class="l-s-none list-item-x flex-row-ms">
+								<li><a href="#" title="tour">Tour</a></li>
+								<li><a href="#" title="Music">Música</a></li>
+								<li><a href="#" title="News">Noticias</a></li>
+								<li><a href="#" title="Media">Media</a></li>
+								<li><a href="#" title="Shop">Tienda</a></li>
+								<li><a href="#" title="About">Acerca de</a></li>
+							</ul>
+						</nav>
+					</div>
+					<div class="social  flex-row-ms">
+						<ul class="l-s-none list-item-x txt-c-second ">
+							<li><a href="" title=""><i class="fab fa-facebook-square"></i></a></li>
+							<li><a href="" title=""><i class="fab fa-twitter-square"></i></a></li>
+							<li><a href="" title=""><i class="fab fa-instagram"></i></a></li>
+							<li><a href="" title=""><i class="fab fa-soundcloud"></i></a></li>
+							<li><a href="" title=""><i class="fab fa-youtube"></i></a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			
+
+		</div>
+		<div class="clearfix"></div>
+		<div class="banner cap-transparent">
+				<li><img src="img/gallery/dj.jpg" alt="dj"/></li>			
+			<div class="directionals txt-c-second">
+				<button class="btn-directional btn-lf" type="button"><i class="fas fa-angle-left "></i></button>
+				<button class="btn-directional btn-rg" type="button"><i class="fas fa-angle-right"></i></button>
+			</div>
+
+		</div>
+	</header><!-- /header -->
+
+	<main id="main" class="font-khand">
+
+		<section class="news">
+			<div class="tittle">
+				<h2 class="bold">Noticias Recientes</h2>
+			</div>
+			<div class="news-card p-5">
+				<div class="flex flex-col-ms">
+					<div class="card">
+						<div class="date">
+							<span>Mayo 13, 2019</span>
+						</div>
+						<div class="image cap-transparent">
+							<img src="img/gallery/fenix-1.jpg" alt=""/>
+							<button class="button absolute-center" type="button">Leer Más</button>
+						</div>
+						<div class="description">
+							<h2 class="bold">Escuchar: Good Things Fall Apart (con Jon Bellion)</h2>
+						</div>
+					</div>
+					<div class="card">
+						<div class="date">
+							<span>Mayo 13, 2019</span>
+						</div>
+						<div class="image cap-transparent">
+							<img src="img/gallery/fenix-2.jpg" alt=""/>
+							<button class="button absolute-center" type="button">Leer Más</button>
+						</div>
+						<div class="description">
+							<h2 class="bold">Escuchar: Good Things Fall Apart (con Jon Bellion)</h2>
+						</div>
+					</div>
+					<div class="card">
+						<div class="date">
+							<span>Mayo 13, 2019</span>
+						</div>
+						<div class="image cap-transparent">
+							<img src="img/gallery/fenix-3.jpeg" alt=""/>
+							<button class="button absolute-center" type="button">Leer Más</button>
+						</div>
+						<div class="description">
+							<h2 class="bold">Escuchar: Good Things Fall Apart (con Jon Bellion)</h2>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="shows">
+			<div class="tittle">
+				<h2 class="bold">Próximos Shows</h2>
+			</div>
+			<div class="list-shows line-gray">
+				<h3 class="line-bottom bold"><span class="underline">Pista</span> para obtener actualizaciones de conciertos y giras.</h3>
+				<ul class="l-s-none list-shows">
+					<li class="flex flex-row-ms line-bottom space-btw">
+						<div class="description flex space-btw">
+							<div class="info">
+								<span class="bold">Sábado 25 de mayo</span>
+								<span class="txt-c-second" >Festival de musical el atardecer</span>
+							</div>
+							<span class="bold">Trampa, FL</span>
+						</div>
+						<div class="tickets  lex-row-ms">
+							<a class="txt-upper bold button txt-d-none" href="#" title="">tickets</a>
+							<a class="txt-upper bold button txt-d-none rs txt-c-second" href="#" title="">rsvp</a>
+						</div>
+					</li>
+					<li class="flex flex-row-ms line-bottom space-btw">
+						<div class="description flex space-btw">
+							<div class="info">
+								<span class="bold">Sábado 25 de mayo</span>
+								<span class="txt-c-second" >Festival de musical el atardecer</span>
+							</div>
+							<span class="bold">Trampa, FL</span>
+						</div>
+						<div class="tickets  lex-row-ms">
+							<a class="txt-upper bold button txt-d-none" href="#" title="">tickets</a>
+							<a class="txt-upper bold button txt-d-none rs txt-c-second" href="#" title="">rsvp</a>
+						</div>
+					</li>
+					<li class="flex flex-row-ms line-bottom space-btw">
+						<div class="description flex space-btw">
+							<div class="info">
+								<span class="bold">Sábado 25 de mayo</span>
+								<span class="txt-c-second" >Festival de musical el atardecer</span>
+							</div>
+							<span class="bold">Trampa, FL</span>
+						</div>
+						<div class="tickets  lex-row-ms">
+							<a class="txt-upper bold button txt-d-none" href="#" title="">tickets</a>
+							<a class="txt-upper bold button txt-d-none rs txt-c-second" href="#" title="">rsvp</a>
+						</div>
+					</li>
+					<li class="flex flex-row-ms line-bottom space-btw">
+						<div class="description flex space-btw">
+							<div class="info">
+								<span class="bold">Sábado 25 de mayo</span>
+								<span class="txt-c-second" >Festival de musical el atardecer</span>
+							</div>
+							<span class="bold">Trampa, FL</span>
+						</div>
+						<div class="tickets  lex-row-ms">
+							<a class="txt-upper bold button txt-d-none" href="#" title="">tickets</a>
+							<a class="txt-upper bold button txt-d-none rs txt-c-second" href="#" title="">rsvp</a>
+						</div>
+					</li>
+					<li class="flex flex-row-ms line-bottom space-btw">
+						<div class="description flex space-btw">
+							<div class="info">
+								<span class="bold">Sábado 25 de mayo</span>
+								<span class="txt-c-second" >Festival de musical el atardecer</span>
+							</div>
+							<span class="bold">Trampa, FL</span>
+						</div>
+						<div class="tickets  lex-row-ms">
+							<a class="txt-upper button txt-d-none bold" href="#" title="">tickets</a>
+							<a class="txt-upper bold button txt-d-none rs txt-c-second" href="#" title="">rsvp</a>
+						</div>
+					</li>
+				</ul>
+				<div class="all-data" style="margin-bottom:  0;">
+					<button class="button rs bold" type="button">Mostrar todas las fechas</button>
+				</div>
+			</div>
+		</section>
+		<section class="merch">
+			<div class="tittle">
+				<h2 class="bold">ILLENIUM Merch</h2>
+			</div>
+			<div class="target-merch">
+				<div class="target flex-center col-center-block">
+					<img src="img/blt.jpg" alt=""/>
+					<div class="description">
+						<span class="bold">2019 MERCH</span>
+						<p class="txt-c-firs">Sudaderas con capucha, camisetas, vinilo y más</p>
+						<button class="button rs rs-hover txt-white" type="button">Compra ahora</button>
+					</div>
+				</div>
+
+			</div>
+
+		</section>
+	</main>
+	<footer class="font-khand">
+		<div class="tittle">
+			<h2 class="txt-upper">Mantente conectado</h2>
+		</div>
+		<div class="contact ">
+			<div class="flex flex-col-ms space-btw line-sec-c flex-center">
+				<div class="line-right p-r-3 p-l-3 m-y-2">
+					<h3 class="bold" style="text-align: center;">Reservas</h3>
+					<a class="txt-c-second txt-d-none" href="mailto:guy.oldaker@unitedtalent.com" title="">guy.oldaker@unitedtalent.com</a>
+				</div>
+				<div class="line-right p-r-3 p-l-3 m-y-2">
+					<h3 class="bold" style="text-align: center;">administración</h3>
+					<a class="txt-c-second txt-d-none" href="mailto:guy.oldaker@unitedtalent.com" title="">guy.oldaker@unitedtalent.com</a>
+				</div>
+				<div class="p-l-3 p-r-3 m-y-2">
+					<h3 class="bold" style="text-align: center;">prensa</h3>
+					<a class="txt-c-second txt-d-none" href="mailto:guy.oldaker@unitedtalent.com" title="">guy.oldaker@unitedtalent.com</a>
+				</div>
+			</div>
+			<div class="flex-center line-gray ">
+				<form>
+					<input type="email" name="email" placeholder="Ingrese su dirección de correo electrónico" required>
+					<input class="button" type="submit" name="suscribe" value="Suscribir">
+				</form>
+			</div>
+			<div class="flex-center">
+				<div class="social">
+					<ul class="l-s-none list-item-x txt-c-second ">
+						<li><a href="" title=""><i class="fab fa-facebook-square"></i></a></li>
+						<li><a href="" title=""><i class="fab fa-twitter-square"></i></a></li>
+						<li><a href="" title=""><i class="fab fa-instagram"></i></a></li>
+						<li><a href="" title=""><i class="fab fa-soundcloud"></i></a></li>
+						<li><a href="" title=""><i class="fab fa-youtube"></i></a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<span class="flex-center p-b-3">© 2018 Illenium LLC. Todos los derechos reservados | sitio: The Firm Graphics</span>
+		<a class="flex-center p-b-3" href="https://www.illenium.com/" title="">Página original: https://www.illenium.com/</a>
+	</footer>
+
+	<script>
+		function toggle(id,className){
+			document.getElementById(id).classList.toggle(className);
+		}
+	</script>
+</body>
+</html>

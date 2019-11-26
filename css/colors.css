@@ -1,0 +1,45 @@
+:root{
+	--color-dark: 		#363131;
+	--color-first: 		#1F0637;
+	--color-second:		#B20663;	
+	--color-txt: 		#fff;
+	--color-btn:   		var(--color-second);
+	--color-txt-hover: 	var(--color-second);
+	--color-tittle:		#fff;
+
+	--gray: 			#858585;
+}
+
+.txt-white{
+	--color-txt: 		#fff;
+	--color-tittle:		#fff;
+	--color-sub-title:	#fff;
+}
+
+.txt-c-second{
+	--color-btn: 		#fff;
+	--color-txt: 		var(--color-second);
+	--color-tittle:		var(--color-second);
+	--color-sub-title:	var(--color-second);
+	--color-txt-hover: 	#fff;
+	
+}
+.c-c-first{
+	--color: 			var(--color-first);
+	--color-btn: 		var(--color-first);
+	--color-sub-title:	var(--color-first);
+	--color-tittle:		var(--color-first);
+}
+.c-c-second{
+	--color: 			var(--color-second);
+	--color-btn: 		var(--color-second);
+	--color-sub-title:	var(--color-second);
+	--color-tittle:		var(--color-second);
+}
+
+.line-gray{
+	--color-line: 		var(--gray);
+}
+.line-sec-c{
+	--color-line: 		var(--color-second);
+}
